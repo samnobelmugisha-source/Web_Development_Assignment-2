@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Individual assignment for Mugisha Sam Nobel,225043582</h1>
+   
+    <h2>1.Create array of 20 numbers and a function to find the sum of all numbers</h2><br>
+    <p id="code1">
+          function Problem_1(numbers) {<br>
+            &nbsp;&nbsp;&nbsp;let total=0;<br>
+            &nbsp;&nbsp;&nbsp;for(let i=0;i<20;i++){<br>
+            &nbsp;&nbsp;&nbsp;total+=numbers[i];<br>
+           &nbsp; &nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;return total;<br>
+          }<br>
+        document.getElementById("answer1").textContent="The sum of all 20 numbers is:"+Problem_1([1,1,2,3,4,5,6,7,8,9,0,22,33,4,55,6,77,8,99,20]);
+    </p>
+    Output:<p id="answer1" ></p>
+    <h2>2.Write a function to find the largest number in an array of 20 numbers</h2>
+    <p id="code2">
+        function Problem_2(numbers){<br>
+            &nbsp;&nbsp;&nbsp;let largest=numbers[0];<br>
+            &nbsp;&nbsp;&nbsp;for(let i=0;i<20;i++){<br>
+            &nbsp;&nbsp;&nbsp;if(numbers[i]>largest){<br>
+                    &nbsp;&nbsp;&nbsp;largest=numbers[i];<br>
+               &nbsp;&nbsp;&nbsp; }<br>
+            &nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;return largest;<br>
+        }<br>
+        document.getElementById("answer2").textContent="The largest of all 20 numbers is:"+Problem_2([1,1,2,3,4,5,6,7,8,9,0,22,33,4,55,6,77,8,99,20]);
+    </p>
+    Output:<p id="answer2"></p>
+    <script>
+        function Problem_1(numbers) {
+            let total=0;
+            for(let i=0;i<20;i++){
+                total+=numbers[i];
+            }
+            return total;
+        }
+        document.getElementById("answer1").textContent="The sum of all 20 numbers is:"+Problem_1([1,1,2,3,4,5,6,7,8,9,0,22,33,4,55,6,77,8,99,20]);
+        function Problem_2(numbers){
+            let largest=numbers[0];
+            for(let i=0;i<20;i++){
+                if(numbers[i]>largest){
+                    largest=numbers[i];
+                }
+            }
+            return largest;
+        }
+        document.getElementById("answer2").textContent="The largest of all 20 numbers is:"+Problem_2([1,1,2,3,4,5,6,7,8,9,0,22,33,4,55,6,77,8,99,20]);
+    </script>
+</body>
+</html>
